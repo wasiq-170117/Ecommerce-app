@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import connectMongoDb from './config/db.js';
 import authRoutes from './routes/authRoute.js';
+import cors from 'cors';
 
 dotenv.config();
 
@@ -16,7 +17,7 @@ connectMongoDb();
 const app = express();
 
 //middlewares
-
+app.use(cors());
 app.use(express.json()); // no need of body parser now
 app.use(morgan('dev'));
 

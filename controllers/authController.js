@@ -6,33 +6,35 @@ import JWT from "jsonwebtoken";
 
 export const registerController = async (req, res) => {
     try {
+        console.log('register controller is called');
+        console.log('req.body = ', req.body);
         const {name, email, password, phone, address} = req.body;
         
         // Validation of Required entries
 
         if (!name)
         {
-            return res.json({error: 'Name is required'});
+            return res.json({message: 'Name is required'});
         }
 
         if (!email)
         {
-            return res.json({error: 'Email is required'});
+            return res.json({message: 'Email is required'});
         }
 
         if (!password)
         {
-            return res.json({error: 'Password is required'});
+            return res.json({message: 'Password is required'});
         }
 
         if (!phone)
         {
-            return res.json({error: 'Phone no. is required'});
+            return res.json({message: 'Phone no. is required'});
         }
 
         if (!address)
         {
-            return res.json({error: 'Address is required'});
+            return res.json({message: 'Address is required'});
         }
 
         // Check if the user is already registered or not
@@ -42,7 +44,7 @@ export const registerController = async (req, res) => {
         if (existingUser)
         {
             return res.status(200).json({
-                success: true,
+                success: false,
                 message: "User is already registered"
             })
         }
@@ -63,7 +65,7 @@ export const registerController = async (req, res) => {
             }
 
             else {
-                console.log(`User ${savedUser} is saved successfully`);
+                console.log(`User is saved successfully`);
                 res.status(201).send({
                     success: true,
                     message: "User registered Successfully",
@@ -124,10 +126,12 @@ export const loginController = async (req, res) => {
             success: true,
             message: "User Logged in Successfully",
             user: {
+                _id: user._id,
                 name: user.name,
                 email: user.email,
                 phone: user.phone,
-                address: user.address
+                address: user.address,
+                role: user.role
             },
             token
         })

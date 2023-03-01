@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 6px -6px gray;
+  --webkit-box-shadow: 0px 8px 6px -6px gray;
+  border-bottom: solid gray;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.navbar-brand {
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.active {
+  border-bottom: 1px solid;
+}
+
+/* Register Page */
+
+
+/* Register Page */
+
+/* footer */
+.footer {
+  color: white;
+  font-size: medium;
+  height: 95px;
+  padding: 25px;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,1,1,1) 92%);
+}
+
+.footer .link {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+.footer .link:hover {
+  border-bottom: 1px solid;
+}
+
+/* footer */
+
+/* Page Not Found */
+.jumbotron {
+  
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ .jumbotron h1 {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.jumbotron p {
+  font-weight: bolder;
+}
+
+.goBackLink {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+}
+/* Page Not Found */
+
+/* Contact Us */
+
+/* .contactUs {
+  display: flex;
+  margin: 0;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Contact Us */
+
+.contactus {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUsHeading {
+  font-weight: bold;
+}

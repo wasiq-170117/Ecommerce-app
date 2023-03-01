@@ -1,0 +1,65 @@
+/* Register Page */
+.Register {
+    font-family: 'Playfair Display', serif;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    margin: 0px; 
+    padding: 0px;
+    font-size: medium;    
+    background: hsla(14, 16%, 70%, 1);
+    background: radial-gradient(circle, hsla(14, 16%, 70%, 1) 27%, hsla(234, 93%, 67%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(14, 16%, 70%, 1) 27%, hsla(234, 93%, 67%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(14, 16%, 70%, 1) 27%, hsla(234, 93%, 67%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BEABA5", endColorstr="#5b6cf9", GradientType=1 );
+  }
+  
+  .Register .RegisterTitle {
+    text-transform: uppercase;
+    color: black;
+    /* display: flex; */
+    font-weight: 400;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .Register .RegistrationForm {
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border: 2px solid;
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,1,1,1) 92%)
+  }
+  
+  .Register .RegistrationForm .RegistrationFormLabel {
+    /* color: white; */
+    color: lightgray;
+  }
+  
+  .Register button {
+    text-transform: uppercase;
+    border-color:hsla(312, 11%, 17%, 1) !important; 
+    color: lightgray !important;
+    font-weight: bold;
+    background: hsla(16, 63%, 47%, 1);
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background: linear-gradient(135deg, hsla(16, 63%, 47%, 1) 100%, hsla(234, 93%, 67%, 1) 100%);
+    background: -moz-linear-gradient(135deg, hsla(16, 63%, 47%, 1) 100%, hsla(234, 93%, 67%, 1) 100%);
+    background: -webkit-linear-gradient(135deg, hsla(16, 63%, 47%, 1) 100%, hsla(234, 93%, 67%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C4562D", endColorstr="#5B6CF9", GradientType=1 );
+  }
+  
+  .Register input {
+    color: hsla(16, 63%, 47%, 1);
+  }
+  
+  /* Register Page */
